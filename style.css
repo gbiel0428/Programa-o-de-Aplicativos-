@@ -1,29 +1,53 @@
-/* RESET DE CONFIGURAÇÕES GERAIS PARA OS NAVEGADORES. */
+ /* RESET DAS CONFIGURAÇÕES DO NAVEGADOR */
 * {
-    margin: 15;
-    padding: 15;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: blanchedalmond;
-    background-image: url("assets/vaza.jpg");
-    background-position: center;
+    background-color: #5548;
+    background-image: url("assets/images.jpg");
+
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    font-family: "Comic Sans MS";
 }
 
-h1 {
+h2 {
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 50px;
-    margin: 21px;
+    font-size: 60px;
+
 }
+
+
 p {
     text-align: justify;
+    font-size: 23px;
+    margin: 30px 100px ;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+img { 
+    display: block;
+    max-width: 300px ;
+    margin: 10px auto;
+
+}
+
+button { 
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    padding: 10px 29px;
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 211px;
-    color: rgb(0, 0, 0)
+    border-radius: 30px;
 }
