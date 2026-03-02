@@ -1,29 +1,97 @@
 /* RESET DE CONFIGURAÇÕES GERAIS PARA OS NAVEGADORES. */
 * {
-    margin: 15;
-    padding: 15;
+    margin: 0;       
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-color: blanchedalmond;
-    background-image: url("assets/vaza.jpg");
-    background-position: center;
+    background-color: rgba(177, 170, 185, 0.033);
+    background-image: url("assets/fundo.avif");
+    
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 h1 {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: blue;
     font-size: 50px;
-    margin: 21px;
+    margin: 20px;
 }
+
 p {
     text-align: justify;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 211px;
-    color: rgb(0, 0, 0)
+    font-size: 15px;
+    font-family: 'Arial';
+    margin: 20px;
+}
+
+hr {
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px auto;
+    color: brown;
+}
+
+button {
+    display: block;
+    height: auto;
+    margin: 20px auto;
+    padding: 5px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+ol {
+    margin: 10px auto;
+    padding: 30px auto;
+    margin-bottom: 30px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+h3 {
+    text-align: center;
+    color: blue;
+    margin: 15px;
+}
+
+img {
+    display: block;
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+input[type="text"] {
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+    display: block;
 }
