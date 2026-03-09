@@ -1,4 +1,4 @@
-// Função comun no JavaScript
+// Função comum  no JavaScript
 
 function somar(a,b) {
     return a + b

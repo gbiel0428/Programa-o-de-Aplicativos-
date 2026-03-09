@@ -1,7 +1,7 @@
 let opcao = 3
 
 switch (opcao) {
-    case 1:
+    case 1:1
         console.log("Opção 1")
         break;
     case 2:
