@@ -8,7 +8,9 @@ console.log("Exibindo números do vetor: ")
 console.log(listadenumeros)
 
 console.log("\nMultiplicando números do vetor: ")
+
 //  MAP = OPERAÇÃO MATEMATICA E DEPOIS SUBTITUIR O VALOR.
+
 const dobrados =  listadenumeros.map(n => n  * 2)
 console.log(dobrados)
 
