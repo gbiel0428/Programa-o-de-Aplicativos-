@@ -1,0 +1,129 @@
+/* RESERT DO NAVEGADOR */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Importando fontes com visual de corrida e telemetria */
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;600&family=Titillium+Web:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Paleta de cores inspirada na F1 */
+:root {
+    --f1-red: #e10600;       /* Vermelho oficial da F1 */
+    --f1-dark: #15151e;      /* Preto asfalto/fibra de carbono */
+    --f1-light: #f3f3f3;     /* Branco gelo */
+    --f1-grey: #38383f;      /* Cinza zebrado */
+}
+
+body {
+    background-color: var(--f1-dark);
+    color: var(--f1-light);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    /* Fundo com textura sutil pontilhada lembrando o asfalto */
+    background-image: radial-gradient(var(--f1-grey) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* O "Chassi" do nosso gerador */
+.container {
+    background: #1e1e27;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-top: 5px solid var(--f1-red);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    color: var(--f1-light);
+    letter-spacing: 2px;
+    border-bottom: 2px dashed var(--f1-grey); /* Lembra a linha de chegada */
+    padding-bottom: 10px;
+}
+
+h1::before {
+    content: '🏁 ';
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: var(--f1-dark);
+    border: 2px solid var(--f1-grey);
+    color: var(--f1-light);
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao clicar no input (foco) */
+input[type="number"]:focus {
+    outline: none;
+    border-color: var(--f1-red);
+    box-shadow: 0 0 8px rgba(225, 6, 0, 0.3);
+}
+
+/* O botão de acelerar (Gerar) */
+button {
+    background-color: var(--f1-red);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #ff1e16; /* Fica mais brilhante ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de arrancar */
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Painel de resultados (estilo tela de telemetria) */
+#resultadoTabuada {
+    margin-top: 25px;
+    text-align: left;
+    background: var(--f1-dark);
+    border-radius: 4px;
+    padding: 15px;
+    border-left: 4px solid var(--f1-red);
+    font-family: 'Courier New', monospace; /* Fonte monoespaçada de painel de dados */
+    font-size: 1.1rem;
+    color: #00ff00; /* Verde neon estilo terminal de pitwall */
+    min-height: 20px;
+}
