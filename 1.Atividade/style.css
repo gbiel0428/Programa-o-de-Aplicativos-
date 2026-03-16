@@ -124,6 +124,6 @@ button:active {
     border-left: 4px solid var(--f1-red);
     font-family: 'Courier New', monospace; /* Fonte monoespaçada de painel de dados */
     font-size: 1.1rem;
-    color: #00ff00; /* Verde neon estilo terminal de pitwall */
+    color: #dfdfdf; /* Verde neon estilo terminal de pitwall */
     min-height: 20px;
 }
