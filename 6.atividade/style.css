@@ -1,0 +1,90 @@
+/* Configuração geral de fonte e espaçamentos */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da tela: cinza claro e tudo centralizado */
+body {
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* O cartão branco principal onde tudo fica dentro */
+body > div {
+    background-color: #ffffff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 380px;
+}
+
+/* Título */
+h1 {
+    color: #0056b3; /* Azul corporativo */
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Rótulos dos campos (Labels) */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+    font-size: 14px;
+}
+
+/* Campos de digitação (Inputs) */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px; /* Dá um respiro entre um campo e outro */
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+}
+
+/* Quando o usuário clica no campo para digitar, a borda fica azul */
+input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Botão de Verificar */
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004494; /* Fica mais escuro ao passar o mouse */
+}
+
+/* Caixa onde o resultado vai aparecer */
+#R {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 16px;
+    color: #212529;
+    font-weight: 500;
+}
