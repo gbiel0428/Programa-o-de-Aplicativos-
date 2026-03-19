@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div {
+    background: #f5f5f5;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-top: 8px solid #2ecc71; /* verde tipo votação */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 5px #2ecc71;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #27ae60;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #219150;
+    transform: scale(1.05);
+}
+
+h2 {
+    margin-top: 20px;
+    color: #2c3e50;
+}
+
+#resultado {
+    margin: 10px auto;
+    padding: 8px;
+    width: 80%;          /* diminui a largura */
+    border-radius: 6px;
+    background: #eafaf1; /* fundo leve */
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
