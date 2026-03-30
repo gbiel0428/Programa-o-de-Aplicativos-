@@ -1,0 +1,48 @@
+/* Container principal do cartão */
+.info-aluno {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 24px;
+    max-width: 350px;
+    margin: 20px auto; /* Centraliza o cartão na tela */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse por cima do cartão */
+.info-aluno:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo do título */
+.info-aluno h2 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 20px 0;
+    color: pink;
+}
+
+/* Estilo dos parágrafos (informações) */
+.info-aluno p {
+    color: #555555;
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Deixando os rótulos (Nome, Idade, Curso) em negrito */
+.info-aluno p strong {
+    color: #333333;
+}

@@ -1,0 +1,71 @@
+/* Container principal do cartão */
+.InforCurso {
+    /* Variáveis de cores para facilitar a manutenção */
+    --cor-primaria: #4facfe;
+    --cor-secundaria: #00f2fe;
+    --texto-escuro: #2d3748;
+    --texto-claro: #4a5568;
+
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 380px;
+    margin: 50px auto; /* Centraliza na tela */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Transição suave para o hover */
+    border: 1px solid #edf2f7;
+}
+
+/* Detalhe decorativo no topo do cartão (uma barrinha com gradiente) */
+.InforCurso::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+/* Efeito ao passar o mouse por cima (Levitação + sombra mais forte) */
+.InforCurso:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 35px rgba(79, 172, 254, 0.15);
+}
+
+/* Estilo do Título */
+.InforCurso h2 {
+    color: var(--texto-escuro);
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+}
+
+/* Estilo das linhas de informação */
+.InforCurso p {
+    color: var(--texto-claro);
+    font-size: 16px;
+    margin: 12px 0;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #e2e8f0; /* Linha tracejada separando as infos */
+    display: flex;
+    justify-content: space-between; /* Empurra o rótulo para um lado e a info para o outro (se usar span) */
+}
+
+/* Tira a linha tracejada do último parágrafo */
+.InforCurso p:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 24px 0;
+}
