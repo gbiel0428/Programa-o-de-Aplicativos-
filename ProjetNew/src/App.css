@@ -1,0 +1,167 @@
+/* Importando uma fonte cinemática com cara de épico histórico */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+:root {
+  --tsushima-black: #0a0a0a;
+  --tsushima-dark-grey: #1a1a1a;
+  --tsushima-red: #9e1b1b;
+  --tsushima-red-glow: #d32f2f;
+  --tsushima-white: #e3e0d5; /* Cor de papiro/papel de arroz */
+  --tsushima-gold: #c5a059;
+}
+
+body {
+  background-color: var(--tsushima-black);
+  color: var(--tsushima-white);
+  font-family: 'Cinzel', serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+.header {
+  background-color: var(--tsushima-dark-grey);
+  color: var(--tsushima-gold);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-bottom: 2px solid var(--tsushima-red);
+  box-shadow: 0 4px 15px rgba(158, 27, 27, 0.2);
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  background-color: var(--tsushima-dark-grey);
+  color: var(--tsushima-white);
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto; /* Empurra o footer para o final da página */
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* ================= CONTAINER DA LISTA ================= */
+.lista {
+  background-color: var(--tsushima-dark-grey);
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border: 1px solid #333;
+  position: relative;
+}
+
+/* Detalhe estético imitando uma marca de sangue/tinta no card */
+.lista::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--tsushima-red);
+}
+
+.lista h2 {
+  text-align: center;
+  color: var(--tsushima-white);
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* ================= FORMULÁRIO E INPUTS ================= */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #555;
+  color: var(--tsushima-white);
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  font-family: inherit;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid var(--tsushima-red);
+  box-shadow: 0 10px 10px -10px rgba(158, 27, 27, 0.5);
+}
+
+/* ================= BOTÃO (EFEITOS DE HOVER E CLICK) ================= */
+button {
+  background-color: var(--tsushima-black);
+  color: var(--tsushima-white);
+  border: 1px solid var(--tsushima-red);
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Efeito ao arrastar o cursor (Hover) - Brilho de brasa/katana */
+button:hover {
+  background-color: var(--tsushima-red);
+  color: var(--tsushima-white);
+  box-shadow: 0 0 15px var(--tsushima-red-glow);
+  text-shadow: 1px 1px 2px black;
+  border-color: var(--tsushima-red-glow);
+}
+
+/* Efeito ao clicar (Active) - Impacto */
+button:active {
+  transform: scale(0.95); /* Dá a sensação de peso ao clicar */
+  background-color: #701010;
+  box-shadow: inset 0 0 10px black;
+}
+
+/* ================= LISTA DE TIMES ================= */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+li {
+  background-color: var(--tsushima-black);
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  border-left: 3px solid var(--tsushima-red);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateX(5px); /* Movimento sutil ao passar o mouse na lista */
+  background-color: #111;
+}
+
+
+.logo-central {
+  display: block;      /* Faz a imagem se comportar como um bloco para permitir o margin auto */
+  margin: 20px auto;   /* O 'auto' nas laterais centraliza horizontalmente */
+  width: 500px;        /* Tamanho "médio" (ajuste o valor se quiser maior ou menor) */
+  height: auto;        /* Mantém a proporção da imagem sem achatar */
+}
