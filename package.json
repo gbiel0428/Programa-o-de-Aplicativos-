@@ -1,15 +1,8 @@
 {
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mysql2": "^3.22.3",
-    "sequelize": "^6.37.8"
-  },
   "name": "programa-o-de-aplicativos-",
   "version": "1.0.0",
-  "description": "1) Trazendo possível mudanças do GitHub:\r git pull",
+  "description": "NPM I EXPRESS SEQUELIZE MYSQL2 CORS",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/gbiel0428/Programa-o-de-Aplicativos-/issues"
   },
-  "homepage": "https://github.com/gbiel0428/Programa-o-de-Aplicativos-#readme"
+  "homepage": "https://github.com/gbiel0428/Programa-o-de-Aplicativos-#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3",
+    "sequelize": "^6.37.8"
+  }
 }
