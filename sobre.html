@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Sou Eu - Gabriel Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Gabriel Oliveira</div>
+        
+        <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu-links" id="menuLinks">
+            <a href="index.html">Início</a>
+            <a href="sobre.html" class="active-link">Quem sou eu?</a>
+            <a href="index.html#habilidades">Habilidades</a>
+            <a href="index.html#projetos">Projetos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <div class="about-content">
+            <h2>Quem sou eu?</h2>
+            <p>Olá! Eu sou o <strong>Gabriel Santos de Oliveira</strong>, tenho 18 anos e sou estudante do Colégio da Polícia Militar. Há 9 meses, decidi mergulhar no universo da tecnologia e iniciei o curso de Desenvolvimento de Sistemas.</p>
+            
+            <p>Atualmente, meu foco está totalmente voltado para o aprendizado contínuo e prático. Venho dedicando meus estudos ao ecossistema JavaScript, aprofundando meus conhecimentos em <strong>React</strong> para a criação de interfaces modernas, <strong>Node.js</strong> para o desenvolvimento Back-End e modelagem de bancos de dados com <strong>MySQL</strong>.</p>
+            
+            <div class="objective-box">
+                <h3>Meu Objetivo</h3>
+                <p>Ingressar no mercado de trabalho em uma empresa da área de tecnologia, onde eu possa colaborar com a equipe, enfrentar desafios reais e buscar constantemente a evolução das minhas habilidades como desenvolvedor.</p>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuLinks');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
