@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Gabriel Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Gabriel Oliveira</div>
+        
+        <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu-links" id="menuLinks">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Quem sou eu?</a>
+            <a href="habilidades.html">Habilidades</a>
+            <a href="projetos.html" class="active-link">Projetos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="projects-container">
+        <h1>Meu Projeto Principal</h1>
+        <p class="projects-subtitle">Abaixo está a aplicação que estou desenvolvendo ativamente para consolidar meus conhecimentos no ecossistema Full-Stack.</p>
+
+        <div class="projects-grid" style="max-width: 700px; margin: 0 auto;"> 
+            <div class="project-card single-project">
+                <div class="project-status-badge">EM DESENVOLVIMENTO</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuLinks');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

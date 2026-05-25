@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades - Gabriel Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Gabriel Oliveira</div>
+        
+        <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="menu-links" id="menuLinks">
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Quem sou eu?</a>
+            <a href="habilidades.html" class="active-link">Habilidades</a>
+            <a href="index.html#projetos">Projetos</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="skills-container">
+        <h1>Minhas Habilidades</h1>
+        <p class="skills-subtitle">Essas são as tecnologias com as quais trabalho no dia a dia e as ferramentas que venho dominando para criar soluções modernas.</p>
+
+        <div class="skills-grid">
+            <div class="skills-card">
+                <h3>Desenvolvimento Web & Lógica</h3>
+                <ul class="skills-list">
+                    <li><strong>HTML / CSS</strong> – Estruturação e estilização moderna e responsiva.</li>
+                    <li><strong>JavaScript</strong> – Criação de dinamismo, manipulação do DOM e funções lógicas.</li>
+                    <li><strong>Python</strong> – Desenvolvimento de scripts, automações e lógica de programação.</li>
+                </ul>
+            </div>
+
+            <div class="skills-card highlight-card">
+                <h3>Aprimorando Conhecimentos</h3>
+                <ul class="skills-list">
+                    <li><strong>React</strong> – Criação de interfaces de usuário dinâmicas e baseadas em componentes.</li>
+                    <li><strong>Node.js</strong> – Construção de APIs estruturadas no Back-End.</li>
+                    <li><strong>MySQL</strong> – Modelagem, consultas e gerenciamento de Banco de Dados relacional.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="learning-footer">
+            <p>💡 <em>"Sempre em busca de mais sabedoria, novos desafios e evolução constante no desenvolvimento de sistemas."</em></p>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuLinks');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

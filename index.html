@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Gabriel Oliveira</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Gabriel Oliveira</div>
+        
+        <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+       <nav class="menu-links" id="menuLinks">
+         <a href="index.html">Início</a>
+         <a href="sobre.html" class="active-link">Quem sou eu?</a>
+         <a href="habilidades.html">Habilidades</a>
+         <a href="projetos.html">Projetos</a>
+         <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Hello World</h1>
+        <h2>Eu sou Gabriel Oliveira, desenvolvedor web.</h2>
+        <a href="contato.html" class="contact-btn">Meu Contato</a>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuLinks');
+            menu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

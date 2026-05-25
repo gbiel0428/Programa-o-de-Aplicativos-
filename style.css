@@ -1,0 +1,493 @@
+/* ==========================================================================
+   1. RESET PADRÃO & CONFIGURAÇÃO BASE
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0e14;
+  color: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==========================================================================
+   2. BARRA DE NAVEGAÇÃO (NAVBAR)
+   ========================================================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  background-color: #0a0e14;
+  position: relative;
+}
+
+.logo {
+  color: #00a8ff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  z-index: 10;
+}
+
+.menu-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #00a8ff;
+  border-radius: 2px;
+}
+
+.menu-links {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-links a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu-links a:hover,
+.menu-links a.active-link {
+  color: #00a8ff;
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (PÁGINA INICIAL)
+   ========================================================================== */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+}
+
+.container h1 {
+  font-size: clamp(38px, 8vw, 56px);
+  color: #00a8ff;
+  margin-bottom: 15px;
+}
+
+.container h2 {
+  font-size: clamp(18px, 4vw, 22px);
+  color: #94a3b8;
+  font-weight: 400;
+  max-width: 600px;
+  margin-bottom: 35px;
+  line-height: 1.5;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: 2px solid #00a8ff;
+  color: #00a8ff;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.contact-btn:hover {
+  background-color: #00a8ff;
+  color: #0a0e14;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 168, 255, 0.4);
+}
+
+/* ==========================================================================
+   4. SEÇÃO QUEM SOU EU
+   ========================================================================== */
+.about-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 24px;
+  width: 100%;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+  background-color: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+
+.about-content h2 {
+  font-size: clamp(28px, 5vw, 36px);
+  color: #00a8ff;
+  margin-bottom: 25px;
+}
+
+.about-content p {
+  color: #94a3b8;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-content strong {
+  color: #f8fafc;
+}
+
+.objective-box {
+  background-color: #1e293b;
+  border-left: 4px solid #00a8ff;
+  padding: 25px;
+  border-radius: 0 8px 8px 0;
+  margin-top: 35px;
+}
+
+.objective-box h3 {
+  color: #00a8ff;
+  font-size: 18px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.objective-box p {
+  margin-bottom: 0;
+  color: #f8fafc;
+  font-style: italic;
+}
+
+/* ==========================================================================
+   5. SEÇÃO DE HABILIDADES
+   ========================================================================== */
+.skills-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.skills-container h1 {
+  font-size: clamp(32px, 6vw, 46px);
+  color: #00a8ff;
+  margin-bottom: 10px;
+}
+
+.skills-subtitle {
+  color: #94a3b8;
+  font-size: 16px;
+  max-width: 750px;
+  margin-bottom: 45px;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 950px;
+}
+
+.skills-card {
+  background-color: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  padding: 35px;
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+}
+
+.skills-card h3 {
+  color: #00a8ff;
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 10px;
+}
+
+.skills-list {
+  list-style: none;
+}
+
+.skills-list li {
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #00a8ff;
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   6. SEÇÃO DE PROJETOS
+   ========================================================================== */
+.projects-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.projects-container h1 {
+  font-size: clamp(32px, 6vw, 46px);
+  color: #00a8ff;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  color: #94a3b8;
+  font-size: 16px;
+  max-width: 700px;
+  margin-bottom: 45px;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  width: 100%;
+}
+
+.project-card.single-project {
+  background-color: #111827;
+  border: 2px dashed #00a8ff;
+  border-radius: 12px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px; 
+  box-shadow: 0 4px 20px rgba(0, 168, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card.single-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 168, 255, 0.25);
+}
+
+.project-status-badge {
+  background-color: rgba(234, 179, 8, 0.15);
+  color: #eab308;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  text-align: center;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.7; }
+  50% { opacity: 1; }
+  100% { opacity: 0.7; }
+}
+
+/* ==========================================================================
+   7. SEÇÃO DE CONTATO (Novo)
+   ========================================================================== */
+.contact-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: clamp(32px, 6vw, 46px);
+  color: #00a8ff;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: #94a3b8;
+  font-size: 16px;
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+.contact-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.card {
+  background-color: #111827;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 25px;
+  flex: 1;
+  min-width: 260px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00a8ff;
+}
+
+.card h3 {
+  color: #f8fafc;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-bottom: 20px;
+  word-break: break-all;
+}
+
+.card-btn {
+  display: inline-block;
+  background-color: #1e293b;
+  color: #00a8ff;
+  border: 1px solid #1e293b;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  text-decoration: none;
+  width: 100%;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.card-btn:hover {
+  background-color: #00a8ff;
+  color: #0a0e14;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.social-links a {
+  flex: 1;
+  text-align: center;
+  background-color: #1e293b;
+  color: #f8fafc;
+  padding: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+  background-color: #00a8ff;
+  color: #0a0e14;
+}
+
+/* ==========================================================================
+   8. RESPONSIVIDADE (CELULAR)
+   ========================================================================== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 24px;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .menu-links {
+    display: none;
+    position: absolute;
+    top: 75px;
+    right: 24px;
+    background-color: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    min-width: 200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 9;
+  }
+
+  .menu-links.active {
+    display: flex;
+  }
+
+  .about-content {
+    padding: 25px 20px;
+  }
+
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
